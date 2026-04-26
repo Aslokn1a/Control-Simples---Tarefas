@@ -8,8 +8,8 @@
     <script src="/js/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/css/style.css">    
 </head>
-<body class="bg-warning-subtle">
-    <nav class=" p-3 navbar navbar-expand-lg bg-body-primary" style="background-color: #faed7a;" >
+<body class="" style="background-color: #ffe8be;">
+    <nav class=" p-3 navbar navbar-expand-lg bg-body-primary" style="background-color: #f5e44c;" >
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -17,8 +17,8 @@
         </div>
     </nav>
     
-    <div class=" container text-center " >
-        <div class=" rounded-bottom p-4 bg-light    row align-items-start">
+    <div class="container text-center "  >
+        <div class=" rounded-bottom p-4     row align-items-start">
             <div class=" h2 p-3 col">
                 Crie uma nova tarefa a seguir:
             </div>
@@ -27,34 +27,42 @@
                     <label for="tarefa" class="form-label">Nome da tarefa</label>
                     <input type="text" class="form-control"id="tarefa" aria-describedby="Tarefa"/>
                 </div>
-                <div class="col-2">
-                    <button onclick="CriarTarefa();" class="btn btn-dark">Criar Tarefa</button>
+                <div class="col ">
+                    <button type="button" onclick="CriarTarefa();" class="btn btn-dark w-25"><h5>CRIAR TAREFA</h5></button>
                 </div>
             </form>
             
         </div>
-        <div class="border-bottom  border-dark p-3 row align-items-start">
-            <div class="rounded bg-warning border-bottom border-light col " >
+        
+    </div>
+    <br>
+    <div class=" text-center border-bottom  border-dark p-4  row  gap-5" style="background-color: #faed7a;"  >
+            <div class="rounded bg-warning  border-light col " >
                 <h4>Tarefas pendentes </h4>
             </div>
-            <span class=" col"></span>
-            <div class=" rounded bg-success  border-bottom border-light col">
+            
+            <div class=" rounded bg-success   border-light col">
                 <h4>Tarefas concluidas</h4>
             </div>
             
         </div>
-        <Br>
-        <div class=" rounded p-2 bg-light row align-items-start" style="height:50vh;">
+        
+        <div class=" rounded p-2  row align-items-start  mh-auto" style="min-height:50vh;">
             <div class="col  " id="Task">
+
             </div>
-            <span class="col"></span>
-            <div class="bg-success col" class="Completed">
+
+            <span class="col">
+    
+            </span>
             
+            <div class=" col" id="Finish">
+
             </div>
             
         </div>
-    </div>
-    <br>
+      
+    
     <footer class="p-3">
         <p class="text-start">Todos os direitos reservados</p>
         <h2>CTRL SIMPLES - Tarefas</h2>
